@@ -1,8 +1,14 @@
 const express = require("express");
 const app = express();
+const routes = require('./routes/index.js');
+require('./config/mongoose');
+
 
 const port = 8000;
 
+app.use(express.urlencoded());
+
+app.use('/', routes);
 
 
 
