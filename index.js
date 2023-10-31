@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 const routes = require('./routes/index.js');
+
+// requiring express-ejs-layout, it will help in rendering the page.
+const expressLayout = require('express-ejs-layouts');
 require('./config/mongoose');
 
 
