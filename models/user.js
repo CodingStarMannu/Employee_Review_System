@@ -16,18 +16,26 @@ const userSchema = new mongoose.Schema(
             type:String,
             required:true
         },
-        role:{
-            type: String,
-            required: true,
-            enum: ["Admin", "Employee"],
-            default: "Employee"
-        }
-    },
+        isAdmin : {
+            type : 'Boolean',
+            required : true
+        },
+        userToReview : [{
+            type : mongoose.Schema.Types.ObjectId,
+            ref : 'User'
+        }],
+    
+        reviewReceivedFrom: [    // received review from another people
+            {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: 'Review',
+            }
+        ]
+    }, 
     {
-        timestamps:true
+        timestamps : true
     }
-);
-
-const User = mongoose.model("User", userSchema);
-
-module.exports = User;
+    );
+    
+    const User = mongoose.model('User' , userSchema);
+    module.exports = User;

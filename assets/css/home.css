@@ -7,7 +7,7 @@
     flex-direction: column;
     gap: 5px;
 }
-/* If the currnet admin is not admin, then this is qoing to show  */
+/* If the current admin is not admin, then this is going to show  */
 .adminPass{
     margin-top: -45px;
 }
@@ -21,7 +21,7 @@
 .submitHomeButton:hover{
     background-color:	#FAD5A5 ;  
 }
-/* Home boxx */
+/* Home box */
 .home-box{
     width: 55%;
     height:fit-content;
@@ -61,7 +61,7 @@
     border-radius: 10px;
     margin-top:5px;
 } 
-/* class of form , so that we can take it's content, and store it is mongooes */
+/* class of form , so that we can take it's content, and store it is mongoose */
 .formClass{
     width: 90%;
     padding: 10px;
@@ -70,7 +70,7 @@
 /* .card-out{
     width: 100%;
 } */
-/* There are two card, while revieweing , we just have to make good use of it
+/* There are two card, while reviewing , we just have to make good use of it
  */
 .in-card{
     width: 70%;

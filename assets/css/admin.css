@@ -21,7 +21,7 @@
     display: flex;
     justify-content: center;
 }
-/* Container for assigning reviwer and reviewing */
+/* Container for assigning reviewer and reviewing */
 .reviewContainer{
     margin-top: 30px;
     display: flex;
@@ -34,7 +34,7 @@
     height: fit-content;
     border-radius:10px;
 }
-/* for the reviewer, containere */
+/* for the reviewer, container */
 .reviewer{
     width: 90%;
 }
