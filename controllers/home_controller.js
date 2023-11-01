@@ -1,7 +1,7 @@
 const User = require('../models/user');
 const Review = require('../models/review');
 
-// This function is for the passing the variable to the home page, such as reviers array, and employee array
+// This function is for the passing the variable to the home page, such as reivers array, and employee array
 module.exports.home = async function(req, res){
     try{
         // Checking for authorization
@@ -15,13 +15,13 @@ module.exports.home = async function(req, res){
         let review = await Review.find({ reviewer: req.user.id });
         // console.log(review);
 
-        // takkng all the necessary part of recipent user in recipent array so that we can pass it as a varibalbe'
+        // taking all the necessary part of recipent user in recipent array so that we can pass it as a variable'
         let recipent = [];
         for(let i = 0; i<user.userToReview.length ; i++){
             let userName = await User.findById(user.userToReview[i]);
             recipent.push(userName);
         }
-        // Taking all the necessary imformation of the reviewers in review array, and passing it in homePage
+        // Taking all the necessary information of the reviewers in review array, and passing it in homePage
         let reviews = [];
         for(let i = 0; i<review.length ; i++){
             let reviewUser = await User.findById(review[i].reviewed);

@@ -63,7 +63,7 @@ Employee Review System
     |
     |               |--->flashMiddleware.js
     |--->config---->|--->mongoose.js
-    |               |--->passport-local-Stradegy.js
+    |               |--->passport-local.js
     |
     |                  |-->admin_controller.js
     |--->controllers-->|-->home_controller.js
@@ -80,10 +80,11 @@ Employee Review System
     |               |-->review.js
     |               |-->user.js
     |
+    |              |--->_footer.ejs
     |              |--->_header.ejs
     |              |---> addEmployee.ejs
     |              |---> admin.ejs
-    |              |---> employe.ejs
+    |              |---> employee.ejs
     |--->views---->|--->forget_password.ejs
     |              |--->home.ejs
     |              |--->layout.ejs

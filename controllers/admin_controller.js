@@ -10,7 +10,7 @@ module.exports.assignWork = async function(req, res){
     });
 }
 
-// This function will show the list of employee woking in the company.
+// This function will show the list of employee working in the company.
 module.exports.showEmployeeList = async function(req, res){
     if(!req.isAuthenticated()){
         req.flash('error' , 'You are not Authorized !');
@@ -42,15 +42,15 @@ module.exports.setReviewrAndReviewe = async function(req, res){
     
             if(employee.isAdmin == false){
                 // flash Messages
-                req.flash('error' , 'Opps ! Not Authorized ');
+                req.flash('error' , 'Oops ! Not Authorized ');
                 // console.log('User is not admin');
                 return res.redirect('/users/sign-in');
             }
         
             else if(req.body.sender == req.body.reciver){
                 // flash messages
-                // console.log("sender === reciver")
-                req.flash('error' , 'Sender and reciver should not be same !');
+                // console.log("sender === receiver")
+                req.flash('error' , 'Sender and receiver should not be same !');
                 return res.redirect('back');
             }
             // After checking all the authentication , part the main part start from here.
@@ -70,7 +70,7 @@ module.exports.setReviewrAndReviewe = async function(req, res){
     
         
     }catch(err){
-        console.log("Errror in setting up the user " + err);
+        console.log("Error in setting up the user " + err);
     }
 
 }
@@ -113,7 +113,7 @@ module.exports.newAdmin = async function(req, res){
 // This function is for deleting the employee
 module.exports.deleteEmployee = async function(req, res){
     try{
-        // Authentication and Authoriztion chekcing
+        // Authentication and Authorization checking
         if(!req.isAuthenticated()){
             // flash Messages
             req.flash('error' , 'Please Login !')

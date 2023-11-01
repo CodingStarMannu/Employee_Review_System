@@ -1,4 +1,4 @@
-const User = require('../models/user'); // requring user
+const User = require('../models/user'); // requiring user
 
 // rendering the singIN page
 module.exports.signIn = function(req, res){
@@ -42,19 +42,19 @@ module.exports.create = async function(req, res){
     return res.redirect('back');
 }
 
-// This fucniton is used for logging Out
+// This function is used for logging Out
 module.exports.destroySession = function (req, res, done){
     return req.logout((err) =>{
         if(err){
             return done(err);
         }
-        req.flash('success' , 'Logged Out Sucessfully !');
+        req.flash('success' , 'Logged Out Successfully !');
         return res.redirect('/users/sign-in');
     });
     
 }
 
-// forrget password page
+// forget password page
 
 module.exports.forgetPasswordPage = function(req, res){
     return res.render('forget_password',{
@@ -79,11 +79,11 @@ module.exports.forgetPasswordLink = async function(req, res){
 
 }
 
-// Adding employe, it is same as signUp , but it will redirect you to the addEmplyee page, where as 
+// Adding employe, it is same as signUp , but it will redirect you to the addEmployee page, where as 
 // that will redirect you to the sing-in page
 module.exports.addEmployeee = async function(req, res){
     if(req.body.password != req.body.confirmPassword){
-        //disply flash messages
+        //display flash messages
         req.flash('error' , 'Password should be equal to Confirm Password');
         return res.redirect('back');
     }
@@ -101,7 +101,7 @@ module.exports.addEmployeee = async function(req, res){
     return res.redirect('back');
 }
 
-// THis function is used for making the new Admin, it is admin specific, fucntion
+// THis function is used for making the new Admin, it is admin specific, function
 module.exports.makeAdmin = async function(req, res){
     try {
         if (req.body.admin_password == 'happy') {

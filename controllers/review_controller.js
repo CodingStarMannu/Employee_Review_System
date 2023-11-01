@@ -2,11 +2,11 @@
 const User = require('../models/user')
 const Review = require('../models/review')
 
-// create riview controller fumction //
+// create review controller function 
 module.exports.newReview = async (req, res) => {
 
     try {
-        // first find recieoient //
+        // first find recipient //
         let recipient = await User.findById(req.params.id);
         // console.log(recipient + " recipient ");
         if (!recipient) {
@@ -36,7 +36,7 @@ module.exports.newReview = async (req, res) => {
                         reviewed: req.user.id,
                         content: req.query.newReview,
                     });
-                    // if ther is no any new review //
+                    // if there is no any new review //
                     if (!new_review) {
                         console.log("Review is not created");
                     }
@@ -45,7 +45,7 @@ module.exports.newReview = async (req, res) => {
                     return res.redirect('/');
                 }
             } else {
-                console.log("user is not loggin");
+                console.log("user is not login");
                 req.flash('error' , "Please LogiN yourself !");
                 return res.redirect("/users/sign-in");
             }
