@@ -1,81 +1,107 @@
-
-/* The styling of home page, is done in such a way that, we get all the element in middle of the page */
-.outerDiv{
+/* Styling for the homepage */
+.outerDiv {
+    min-height: calc(100vh - 50px); /* Ensure that content doesn't get hidden by the footer */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 5px;
-}
-/* If the current admin is not admin, then this is going to show  */
-.adminPass{
-    margin-top: -45px;
-}
-/* Submit button of admin Pass */
-.submitHomeButton{
+    margin-bottom: 50px; /* Add margin at the bottom to make space for the footer */
+  }
+  
+  /* If the current admin is not an admin, then this is going to show */
+  .adminPass {
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  /* Submit button of admin Pass */
+  .submitHomeButton {
     border: 1px solid black;
-    background-color:	#FFFF8F;
+    background-color: #f1c40f; /* Attractive yellow background */
     color: black;
     border-radius: 15px;
-}
-.submitHomeButton:hover{
-    background-color:	#FAD5A5 ;  
-}
-/* Home box */
-.home-box{
+    transition: background-color 0.3s; /* Smooth color transition */
+  }
+  
+  .submitHomeButton:hover {
+    background-color: #e67e22; /* Slight color change on hover */
+  }
+  
+  /* Home box */
+  .home-box {
     width: 55%;
-    height:fit-content;
-    text-align: center;
-    margin-top:10px;
-    font-family: Arial, sans-serif;
-   
-}
-.employeereview{
-    font-family: Arial, sans-serif;
-    font-weight:600;
-}
-.employeereview img{
-    height:85px;
-    width:95px;
-}
-.myreview{
-    font-family: Arial, sans-serif;
-    font-weight:600;
-}
-.myreview img{
-    height:85px;
-    width:95px;
-}
-.adminPass > form > input{
-    outline: none;
-    border:1px solid rgb(11, 100, 132);
-   border-radius: 7px;
- }
-/* Here the user can review the co-employee, if admin assign to him */
-.reviewBox{
-    width: 95%;
     height: fit-content;
-    min-height: 140px;
-    padding: 5px;
-    border: 1px solid  #006622;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Light gray background */
+    padding: 15px;
     border-radius: 10px;
-    margin-top:5px;
-} 
-/* class of form , so that we can take it's content, and store it is mongoose */
-.formClass{
-    width: 90%;
+    box-shadow: 0px 0px 10px 0px #888; /* Subtle shadow */
+  }
+  
+  .employeereview {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+  }
+  
+  .employeereview img {
+    width: 50px; /* Adjust the width of the review image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure that only the middle part is visible */
+  }
+  
+  .myreview {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+  }
+  
+  .myreview img {
+    width: 50px; /* Adjust the width of the review image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure that only the middle part is visible */
+  }
+  
+  .adminPass > form > input {
+    outline: none;
+    border: 1px solid #2980b9; /* Attractive blue border */
+    border-radius: 7px;
+  }
+  
+  /* Here the user can review the co-employee if admin assigns to them */
+  .reviewBox {
+    width: 95%;
+    min-height: 140px;
     padding: 10px;
-}
-
-/* .card-out{
-    width: 100%;
-} */
-/* There are two card, while reviewing , we just have to make good use of it
- */
-.in-card{
+    background-color: #f39c12; /* Attractive orange background */
+    border: 2px solid #e74c3c; /* Attractive red border */
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px 0px #888; /* Subtle shadow */
+  }
+  
+  /* Class of the form, so that we can take its content and store it in MongoDB */
+  .formClass {
+    width: 90%;
+    padding: 15px;
+    background-color: #ecf0f1; /* Light gray background */
+    border-radius: 10px;
+  }
+  
+  /* Two cards for reviewing */
+  .in-card {
     width: 70%;
-    border: 1px solid black;
-    background-color: #ffff66;
+    border: 1px solid #3498db; /* Attractive blue border */
+    background-color: #3498db; /* Attractive blue background */
+    color: white;
     border-radius: 40px;
     margin-left: 15%;
-}
+    padding: 15px;
+    box-shadow: 0px 0px 10px 0px #888; /* Subtle shadow */
+  }
+  
+  .in-card:hover {
+    background-color: #2980b9; /* Slight color change on hover */
+    border-color: #2980b9; /* Border color change on hover */
+  }
+  

@@ -1,75 +1,99 @@
-
-
-/* The styling for sign-in / sign-up / forgetPassword is same */
+/* The styling for sign-in / sign-up / forgetPassword is the same */
 /* It is the main container */
-.mainContainer{
+.mainContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-left: 30vw;
-    height: 50vh;
+    height: 60vh;
     width: 40vw;
-    border: 1px solid black;
-}
-/* The main container is divided into two part */
-.companyLogo{ 
-    background-color:#188b6b;
+    border: 1px solid #3498db; /* Attractive blue border */
+    border-radius: 20px; /* Rounded corners */
+    background-color: #ecf0f1; /* Light gray background */
+  }
+  
+  /* The main container is divided into two parts */
+  .companyLogo {
+    background-color: #3498db; /* Attractive blue background */
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 40%;
-    
-}
-/* Company Logo,  */
-.companyLogo img{
-   height:100px;
-   width:100px;
-   
-}
-
-.formInput{
-     background-color:#B4F1B1;
+    border-top-left-radius: 20px; /* Rounded top-left corner */
+    border-bottom-left-radius: 20px; /* Rounded bottom-left corner */
+  }
+  
+  /* Company Logo */
+  .companyLogo img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .formInput {
+    background-color: #f1c40f; /* Attractive yellow background */
     height: 100%;
     width: 60%;
-    /* margin-left: 10%; */
-}
-/* Form heading */
-.formInput h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 20px; /* Rounded top-right corner */
+    border-bottom-right-radius: 20px; /* Rounded bottom-right corner */
+    padding: 20px;
+  }
+  
+  /* Form heading */
+  .formInput h1 {
     margin-left: 30%;
-    color:black;
-}
-
-.formInput form{
+    color: #3498db; /* Blue color for heading */
+    font-size: 24px;
+  }
+  
+  .formInput form {
     margin-left: 10%;
     margin-top: 10%;
-}
-
-form input{
+  }
+  
+  form input {
     width: 90%;
     height: 35px;
     margin: 10px 0px;
     border-radius: 30px;
     padding: 10px;
-}
-/* Styling for the button, and submit button */
-.buttons{
+    border: 1px solid #3498db; /* Attractive blue border */
+  }
+  
+  /* Styling for the button and submit button */
+  .buttons {
     display: flex;
     flex-direction: row;
-
-}
-.submitButtons{
-    width: 40%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .submitButtons {
+    width: 45%;
     margin-left: 10%;
-}
-
-.submitButtons button{
+  }
+  
+  .submitButtons button {
     width: 100%;
     border-radius: 30px;
-    background-color: #B4F1B1;
-}
-
-.extraStuff{
+    background-color: #3498db; /* Attractive blue background */
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth color transition */
+  }
+  
+  .submitButtons button:hover {
+    background-color: #2980b9; /* Slight color change on hover */
+  }
+  
+  .extraStuff {
     margin-top: 20px;
-}
+  }
+  

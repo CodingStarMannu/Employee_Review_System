@@ -5,7 +5,7 @@ const app = express();
 // requiring express-ejs-layout, it will help in rendering the page.
 const expressLayout = require('express-ejs-layouts');
 
-// requring DataBase
+// requiring DataBase
 const db = require('./config/mongoose');
 
 const bodyParser = require('body-parser');
@@ -45,6 +45,7 @@ app.use(session({
     },
     store: MongoStore.create({
         mongoUrl: 'mongodb+srv://whiteWolff:praduman@cluster0.an8uy3k.mongodb.net/ERS?retryWrites=true&w=majority',
+        // mongoUrl:"mongodb+srv://manojpant097:mania1234@cluster0.a9wzm3t.mongodb.net/employee_review_system?retryWrites=true&w=majority",
         autoRemove: 'disabled'
     },
         (err) => {

@@ -9,14 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <%= title%> </title>
 </head>
-<body style="background-color: rgba(151, 232, 131, 0.945);">
+<body style="background-color: rgb(188 212 182 / 95%);">
     <%- include('_header')%>
 
 
     <%-body%>
 
     <%- include('_footer')%>
-    <!-- It is for displying the messages, in the pages -->
+    <!-- It is for displaying the messages, in the pages -->
     <script>
         <% if (flash.success && flash.success.length > 0)  { %>
             new Noty({

@@ -1,70 +1,78 @@
 /* Heading of the admin Page */
-.heading{
+.heading {
     display: flex;
     justify-content: center;
-    /* align-items: center;
-    align-content: center; */
-    color:black;
-    font-size:1.5rem;
-    text-decoration:underline 2px darkgreen;
-    font-weight:bold;
-   
-}
-.text-center{
-    font-size:1.2rem;
-    margin-top:5px;
-    text-decoration:underline 2px darkgreen;
-    font-weight:bold;
-}
-/* Assign Heading */
-.assingHeadine{
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: underline 2px rgb(9, 127, 163);
+    font-weight: bold;
+  }
+  
+  .text-center {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    text-decoration: underline 2px rgb(9, 127, 163);
+    font-weight: bold;
+  }
+  
+  /* Assign Heading */
+  .assingHeadine {
     display: flex;
     justify-content: center;
-}
-/* Container for assigning reviewer and reviewing */
-.reviewContainer{
+  }
+  
+  /* Container for assigning reviewer and reviewing */
+  .reviewContainer {
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    border: 2px solid darkgreen;
+    border: 2px solid rgb(9, 127, 163);
     flex-direction: column;
     width: 40%;
     margin-left: 30%;
     align-items: center;
     height: fit-content;
-    border-radius:10px;
-}
-/* for the reviewer, container */
-.reviewer{
+    border-radius: 10px;
+    background-color: #f2f2f2; /* Attractive grey background color */
+  }
+  
+  /* For the reviewer container */
+  .reviewer {
     width: 90%;
-}
-/* Submit buttons div*/
-.submitButtons{
+  }
+  
+  /* Submit buttons div */
+  .submitButtons {
     margin-left: 36%;
     width: 30%;
-    margin-top:10px;
-    padding:10px;
-}
-/* Submit buttons  */
-.submitButtons button{
-    background-color:#FFFF8F;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  /* Submit buttons */
+  .submitButtons button {
+    background-color: #FFFF8F;
     width: 10vw;
     height: 25px;
-    border: 1px solid darkgreen;
+    border: 1px solid rgb(9, 127, 163);
     border-radius: 20px;
-
-}
-.submitButtons button:hover{
-    background-color:yellow ;
-}
-/* This button is used in assigning admin,  */
-.submitButtons2{
-    width: 10vw;
-}
-
-.btn{
+    transition: background-color 0.3s; /* Smooth color transition */
+  }
+  
+  .submitButtons button:hover {
     background-color: yellow;
-}
-#addemp{
+  }
+  
+  /* This button is used in assigning admin */
+  .submitButtons2 {
+    width: 10vw;
+  }
+  
+  .btn {
+    background-color: yellow;
+  }
+  
+  #addemp {
     background-color: lightyellow;
-}
+  }
+  
