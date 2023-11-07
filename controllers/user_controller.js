@@ -104,7 +104,7 @@ module.exports.addEmployeee = async function(req, res){
 // THis function is used for making the new Admin, it is admin specific, function
 module.exports.makeAdmin = async function(req, res){
     try {
-        if (req.body.admin_password == 'happy') {
+        if (req.body.admin_password == 'manoj') {
             let user = await User.findById(req.user.id );
             user.isAdmin = true;
             user.save();
