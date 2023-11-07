@@ -16,10 +16,10 @@ module.exports.home = async function(req, res){
         // console.log(review);
 
         // taking all the necessary part of recipent user in recipent array so that we can pass it as a variable'
-        let recipent = [];
+        let recipient = [];
         for(let i = 0; i<user.userToReview.length ; i++){
             let userName = await User.findById(user.userToReview[i]);
-            recipent.push(userName);
+            recipient.push(userName);
         }
         // Taking all the necessary information of the reviewers in review array, and passing it in homePage
         let reviews = [];
@@ -38,7 +38,7 @@ module.exports.home = async function(req, res){
         // Render the page, with the variable made above , and pass them as the argument
         return res.render('home',{
             title : "ERS | HOME",
-            recipent : recipent,
+            recipient : recipient,
             reviews : reviews,
             user : user
         });

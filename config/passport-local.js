@@ -39,7 +39,7 @@ passport.deserializeUser(async function(id, done){
 });
 // Checking authentication
 passport.checkAuthentication = function (req, res, next){
-    // if user is signed in , then pass on the request ot the next fucntion (controller's action)
+    // if user is signed in , then pass on the request ot the next function (controller's action)
     if(req.isAuthenticated()){
         return next();
     }
@@ -49,7 +49,7 @@ passport.checkAuthentication = function (req, res, next){
 // Setting authentication
 passport.setAuthenticatedUser = function(req, res, next){
     if(req.isAuthenticated()){
-        // currenct user data is stored in the req, so we are just storing its data to res.
+        // current user data is stored in the req, so we are just storing its data to res.
         res.locals.user = req.user
     }
     next();
